@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfUser xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <User>
+    <Id>1</Id>
+    <Name>user1</Name>
+    <Password>AQAAAAIAAYagAAAAEPV+RWPNLWFDyJAEg3dHTmFN2FmbxhPno+LTlSMK50i04ogtxqGbheduUCDcvGEwLQ==</Password>
+  </User>
+  <User>
+    <Id>2</Id>
+    <Name>user2</Name>
+    <Password>AQAAAAIAAYagAAAAEE6V4ezF4yW2lhX+hkGJqb5WJ/+XFXHs23A0mcGemOBeSwF1NpbhuIc6t1wD55Wo/A==</Password>
+  </User>
+</ArrayOfUser>

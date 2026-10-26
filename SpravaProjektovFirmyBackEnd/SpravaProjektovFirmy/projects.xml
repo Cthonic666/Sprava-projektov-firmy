@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Project>
+    <Id>prj1</Id>
+    <UserId>1</UserId>
+    <Name>aa</Name>
+    <Abbreviation>aa</Abbreviation>
+    <Customer>aa</Customer>
+  </Project>
+  <Project>
+    <Id>prj2</Id>
+    <UserId>2</UserId>
+    <Name>aa</Name>
+    <Abbreviation>bb</Abbreviation>
+    <Customer>cc</Customer>
+  </Project>
+</ArrayOfProject>

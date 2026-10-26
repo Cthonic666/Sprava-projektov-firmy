@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "j4NS3oiF9oM=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Rastislav Pavlov\\RiderProjects\\VstupnyTest\\SpravaProjektovFirmy\\SpravaProjektovFirmy.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Rastislav Pavlov\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.13\\microsoft.aspnetcore.openapi.10.0.13.nupkg.sha512",
+    "C:\\Users\\Rastislav Pavlov\\.nuget\\packages\\microsoft.openapi\\2.12.2\\microsoft.openapi.2.12.2.nupkg.sha512"
+  ],
+  "logs": []
+}
