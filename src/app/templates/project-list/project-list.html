@@ -1,0 +1,71 @@
+<div class="row g-4">
+
+  <!-- Formulár -->
+  <div class="col-md-4">
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <h5 class="card-title">
+          {{ projectId === null ? 'Nový projekt' : 'Úprava projektu' }}
+        </h5>
+
+        <form (ngSubmit)="save()">
+          <div class="mb-3">
+            <label class="form-label">Názov</label>
+            <input class="form-control" [(ngModel)]="form.name" name="name" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Skratka</label>
+            <input class="form-control" [(ngModel)]="form.abbreviation" name="abbreviation" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Zákazník</label>
+            <input class="form-control" [(ngModel)]="form.customer" name="customer" required>
+          </div>
+
+          <button type="submit" class="btn btn-success">
+            {{ projectId === null ? 'Pridať' : 'Uložiť' }}
+          </button>
+          @if (projectId !== null) {
+            <button type="button" class="btn btn-secondary ms-2" (click)="cancel()">Zrušiť</button>
+          }
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tabuľka -->
+  <div class="col-md-8">
+    @if (error()) {
+      <div class="alert alert-danger">{{ error() }}</div>
+    }
+
+    <table class="table table-striped table-hover align-middle">
+      <thead class="table-dark">
+      <tr>
+        <th>ID</th>
+        <th>Názov</th>
+        <th>Skratka</th>
+        <th>Zákazník</th>
+        <th class="text-end">Akcie</th>
+      </tr>
+      </thead>
+      <tbody>
+        @for (p of projects(); track p.id) {
+          <tr>
+            <td>{{ p.id }}</td>
+            <td>{{ p.name }}</td>
+            <td>{{ p.abbreviation }}</td>
+            <td>{{ p.customer }}</td>
+            <td class="text-end">
+              <button class="btn btn-sm btn-outline-primary me-1" (click)="edit(p)">Upraviť</button>
+              <button class="btn btn-sm btn-outline-danger" (click)="remove(p)">Zmazať</button>
+            </td>
+          </tr>
+        } @empty {
+          <tr><td colspan="3" class="text-center text-muted">Zatiaľ žiadne projekty.</td></tr>
+        }
+      </tbody>
+    </table>
+  </div>
+
+</div>
